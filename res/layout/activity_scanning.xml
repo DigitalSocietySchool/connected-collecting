@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ScanningActivity" >
+    
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/border"
+        android:orientation="vertical" >
+        
+        <ImageButton
+            android:id="@+id/sendPictureButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:contentDescription="@string/action_camera_img_desc"
+            android:minHeight="48dp"
+            android:minWidth="48dp"
+            android:onClick="sendStickers"
+            android:src="@drawable/send" />        
+
+        <ImageButton
+            android:id="@+id/takePictureButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:contentDescription="@string/action_camera_img_desc"
+            android:minHeight="48dp"
+            android:minWidth="48dp"
+            android:onClick="startScanning"
+            android:src="@drawable/camera_icon" />
+                
+        <ImageButton
+            android:id="@+id/deleteItemButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:contentDescription="@string/action_camera_img_desc"
+            android:minHeight="48dp"
+            android:minWidth="48dp"
+            android:onClick="deleteItem"
+            android:src="@drawable/trash" />
+                
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/stickersListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp" >
+
+    </ListView>
+
+</RelativeLayout>
