@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.medialab</groupId>
+	<artifactId>medialab-parent</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>MediaLAB Parent</name>
+
+	<properties>
+		<!-- tomcat home -->
+		<catalina.home>C:\dev\apache-tomcat-7.0.35\</catalina.home>
+		<cargo.maven2.plugin.version>1.2.0</cargo.maven2.plugin.version>
+
+		<!-- encoding -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<!-- spring -->
+		<spring.version>3.2.3.RELEASE</spring.version>
+		
+		<!-- struts2 -->
+		<struts2.version>2.3.14</struts2.version>
+		
+		<servlet.api.version>2.4</servlet.api.version>
+		<jsp.api.version>2.0</jsp.api.version>
+		<commons.fileupload.version>1.1.1</commons.fileupload.version>
+		<dwr.version>1.1-beta-3</dwr.version>
+		<bootstrap.version>1.5.2</bootstrap.version>		
+		
+		<!-- ehcache -->
+		<ehcache.version>2.6.6</ehcache.version>
+		<hibernate.ehcache.version>4.2.2.Final</hibernate.ehcache.version>
+		<!-- logging -->
+		<slf4j.version>1.7.5</slf4j.version>
+		<logback.version>1.0.7</logback.version>
+
+		<!-- jax-rs -->
+		<jersey.version>1.14</jersey.version>
+		<jersey.test.version>1.7-ea05</jersey.test.version>
+
+		<!-- servlet -->
+		<javax.servlet.version>3.0.1</javax.servlet.version>
+
+
+		<!-- wadl -->
+		<wadl.version>2.1</wadl.version>
+
+		<!-- junit -->
+		<junit.version>4.10</junit.version>
+
+		<!-- guava -->
+		<guava.version>13.0.1</guava.version>
+
+		<!-- metrics core -->
+		<metrics.version>2.1.3</metrics.version>
+
+		<!-- mysql -->
+		<mysql.version>5.1.22</mysql.version>
+
+		<!-- hibernate -->
+		<hibernate.version>4.1.2.Final</hibernate.version>
+
+		<!-- Compiler -->
+		<compiler.plugin.version>2.5.1</compiler.plugin.version>
+		<compiler.jdk.version>1.6</compiler.jdk.version>
+
+		<!-- deployer -->
+		<cargo.version>1.2.4</cargo.version>
+		<cargo.web>medialab</cargo.web>
+		<cargo.api>medialab-api</cargo.api>
+		<cargo.dbadmin>dbadmin</cargo.dbadmin>
+
+		<!-- cglib -->
+		<cglib.version>2.2.2</cglib.version>
+
+		<!-- aws -->
+		<aws.version>1.3.22</aws.version>
+
+		<!-- jstl -->
+		<jstl.version>1.2</jstl.version>
+
+		<!-- connection pool -->
+		<dbcp.version>1.2</dbcp.version>
+
+	</properties>
+
+	<dependencies>
+		<!-- lib util -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${guava.version}</version>
+		</dependency>
+
+		<!-- tests -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- logging -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<scope>runtime</scope>
+			<version>${logback.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${compiler.plugin.version}</version>
+				<configuration>
+					<source>${compiler.jdk.version}</source>
+					<target>${compiler.jdk.version}</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<modules>
+		<module>medialab-persistence</module>
+		<module>medialab-services</module>
+		<module>medialab-api</module>
+		<module>medialab-beans</module>
+    <module>medialab-dbadmin</module>
+  </modules>
+</project>

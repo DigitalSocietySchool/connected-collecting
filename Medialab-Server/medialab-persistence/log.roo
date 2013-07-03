@@ -1,0 +1,21 @@
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-06-03 11:32:37
+help web mvc setup
+// [failed] hint
+web mvc setup
+hint package
+hint web mvc all
+help web mvc all
+help web mvc
+help web mvc all package
+web mvc all --package ~.web
+perform package
+perform package
+perform package
+perform package
+perform package
+perform package
+perform package
+perform package
+perform package
+quit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-06-03 15:36:37

@@ -1,0 +1,31 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd"
+	maxBytesLocalHeap="100m" updateCheck="false">
+	<sizeOfPolicy maxDepth="50000" maxDepthExceededBehavior="abort" />
+
+	<defaultCache overflowToDisk="false" eternal="false"
+		timeToIdleSeconds="900" timeToLiveSeconds="900"
+		memoryStoreEvictionPolicy="LRU" />
+
+	<cache name="com.medialab.persistence.entity.Rank"
+		overflowToDisk="false" eternal="true" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" memoryStoreEvictionPolicy="LRU" />
+		
+	<cache name="com.medialab.persistence.entity.Sticker"
+		overflowToDisk="false" eternal="true" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" memoryStoreEvictionPolicy="LRU" />
+		
+	<cache name="com.medialab.persistence.entity.Player"
+		overflowToDisk="false" eternal="true" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" memoryStoreEvictionPolicy="LRU" />
+		
+	<cache name="com.medialab.persistence.entity.Content"
+		overflowToDisk="false" eternal="true" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" memoryStoreEvictionPolicy="LRU" />
+		
+	<cache name="com.medialab.persistence.entity.Album"
+		overflowToDisk="false" eternal="true" timeToIdleSeconds="0"
+		timeToLiveSeconds="0" memoryStoreEvictionPolicy="LRU" />								
+
+
+</ehcache>
