@@ -53,7 +53,8 @@ public class UserFacade
 		dtos.add(dto);
 		return dtos;
 	}
-
+	
+	//created for the expo day so we could easilly clean up the both users db
 	public MediaLABResponse cleanDB()
 	{
 		try
