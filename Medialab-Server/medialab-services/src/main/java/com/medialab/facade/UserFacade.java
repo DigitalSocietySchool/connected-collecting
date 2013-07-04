@@ -33,7 +33,7 @@ public class UserFacade
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(UserFacade.class);
 
-	private static final String SECRET_TOKEN = "cfaUCfrhUd17zytFfIMq050mrdz5w75Yo28ESRag";
+	private static final String SECRET_TOKEN = "";
 
 	@Autowired
 	private UserService userService;
