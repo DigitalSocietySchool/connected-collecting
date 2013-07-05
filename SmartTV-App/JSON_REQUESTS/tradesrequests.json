@@ -1,0 +1,80 @@
+{
+    "response": "SUCCESS",
+    "trades": [
+        {
+            "id": 1,
+            "startDate": 1372155195000,
+            "initiator": {
+                "id": 1,
+                "name": "Davi Alves",
+                "creationDate": 1369346400000,
+                "lastLoginDate": 1369346400000,
+                "rank": {
+                    "id": 1,
+                    "alias": "Beginner",
+                    "level": "BEGINNER",
+                    "goal": 20,
+                    "badge_url": "/begginer_badge.png"
+                },
+                "stickersNextLevel": 0,
+                "stickers": null,
+                "avatar_url": "/avatar.png",
+                "new_items_count": 0
+            },
+            "respondent": {
+                "id": 2,
+                "name": "Ruben",
+                "creationDate": 1371592800000,
+                "lastLoginDate": 1371592800000,
+                "rank": {
+                    "id": 1,
+                    "alias": "Beginner",
+                    "level": "BEGINNER",
+                    "goal": 20,
+                    "badge_url": "/begginer_badge.png"
+                },
+                "stickersNextLevel": 0,
+                "stickers": null,
+                "avatar_url": "/avatar.png",
+                "new_items_count": 0
+            },
+            "initiatorSticker": {
+                "id": 1,
+                "number": "174",
+                "image": "img/stickers/players/wesleySneijder.png",
+                "type": "PLAYER",
+                "content": [
+                    {
+                        "id": 1,
+                        "thumbnail": "videos/video1.mp4",
+                        "video": "img/video_vanpersi.png"
+                    },
+                    {
+                        "id": 2,
+                        "thumbnail": "videos/video1.mp4",
+                        "video": "img/rvp2.jpg"
+                    }
+                ]
+            },
+            "respondentSticker": {
+                "id": 2,
+                "number": "199",
+                "image": "img/stickers/players/wesleySneijder.png",
+                "type": "PLAYER",
+                "content": [
+                    {
+                        "id": 3,
+                        "thumbnail": "videos/video1.mp4",
+                        "video": "img/rvp3.jpg"
+                    },
+                    {
+                        "id": 4,
+                        "thumbnail": "videos/video1.mp4",
+                        "video": "img/rvp4.jpg"
+                    }
+                ]
+            },
+            "status": "WAITING"
+        }
+    ]
+}

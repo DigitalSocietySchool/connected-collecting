@@ -1,0 +1,845 @@
+{
+    "response": "SUCCESS",
+    "teams": [
+        {
+            "id": 1,
+            "description": "Dutch football is a team of male footballers that represents the Netherlands in international competitions.",
+            "flagUrl": "/img/design/backgrounds/background_nl.png",
+            "stickerCount": 0,
+            "album": null,
+            "players": [
+                {
+                    "name": "WESLEY SNEIJDER",
+                    "id": "1",
+                    "sticker": {
+                        "image": "",
+                        "number": "133",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "MAARTEN STEKELENBURG",
+                    "id": "2",
+                    "sticker": {
+                        "image": "",
+                        "number": "7",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "ARJEN ROBBEN",
+                    "id": "3",
+                    "sticker": {
+                        "image": "",
+                        "number": "40",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "RAFAEL VAN DER VAART",
+                    "id": "4",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "ROBIN VAN PERSIE",
+                    "id": "5",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "DIRK KUYT",
+                    "id": "6",
+                    "sticker": {
+                        "image": "",
+                        "number": "82",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "JONATHAN DE GUZMAN",
+                    "id": "7",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "IBRAHIM AFFELAY",
+                    "id": "8",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "JHON HEITINGA",
+                    "id": "9",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "ERIK PIETERS",
+                    "id": "10",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "11",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                }
+            ],
+            "name": "Netherlands"
+        },
+		{
+            "id": 2,
+            "description": "Dutch football is a team of male footballers that represents the Netherlands in international competitions.",
+            "flagUrl": "/img/teamView/nl_span2.gif",
+            "stickerCount": 0,
+            "album": null,
+            "players": [
+                {
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                }
+            ],
+            "name": "Netherlands"
+        },
+		{
+            "id": 3,
+            "description": "Dutch football is a team of male footballers that represents the Netherlands in international competitions.",
+            "flagUrl": "/img/teamView/nl_span2.gif",
+            "stickerCount": 0,
+            "album": null,
+            "players": [
+                {
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                }
+            ],
+            "name": "Netherlands"
+        },
+		{
+            "id": 4,
+            "description": "Dutch football is a team of male footballers that represents the Netherlands in international competitions.",
+            "flagUrl": "/img/teamView/nl_span2.gif",
+            "stickerCount": 0,
+            "album": null,
+            "players": [
+                {
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                }
+            ],
+            "name": "Netherlands"
+        },
+		{
+            "id": 5,
+            "description": "Dutch football is a team of male footballers that represents the Netherlands in international competitions.",
+            "flagUrl": "/img/design/backgrounds/background_esp.png",
+            "stickerCount": 0,
+            "album": null,
+            "players": [
+                {
+                    "name": "IKER CASILLAS",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "JOAN CAPDEVILA",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "CARLES PUYOL",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "SERGIO RAMOS",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "CARLOS MARCHENA",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "XABI ALONSO",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "ANDRES INIESTA",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "JAVI MARTINEZ",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "David Silva",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "David Villa",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "FERNANDO LLORENTE",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                }
+            ],
+            "name": "Spain"
+        },
+		{
+            "id": 6,
+            "description": "Dutch football is a team of male footballers that represents the Netherlands in international competitions.",
+            "flagUrl": "/img/design/backgrounds/background_usa.png",
+            "stickerCount": 0,
+            "album": null,
+            "players": [
+                {
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                }
+            ],
+            "name": "USA"
+        },
+		{
+            "id": 7,
+            "description": "Dutch football is a team of male footballers that represents the Netherlands in international competitions.",
+            "flagUrl": "/img/teamView/nl_span2.gif",
+            "stickerCount": 0,
+            "album": null,
+            "players": [
+                {
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                },
+				{
+                    "name": "",
+                    "id": "",
+                    "sticker": {
+                        "image": "",
+                        "number": "",
+                        "type": "",
+                        "content": ""
+                    }
+                }
+            ],
+            "name": "Netherlands"
+        }
+    ]
+}

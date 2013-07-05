@@ -1,0 +1,39 @@
+{
+    "response": "STICKERS_RETRIEVE_SUCESS",
+    "users": [
+        {
+            "id": "1",
+            "name": "Davi",
+            "stickers": [
+                {
+                    "id": "1",
+                    "number": "133",
+                    "type": "PLAYER",
+                    "image": "img/stickers/players/wesleySneijder.png",
+                    "content": "Wesley “The Sniper” Sneijder<br/>June 9, 1984 (age 28)<br/>Currently plays at: Galatasaray<br/>Birth Place: Utrecht, Netherlands<br/>Started football career: 7 years old<br/>Amateur club: <span id='content1' data-player='2'>AFC Ajax</span> – Won 6 trophies<br/>Position: Midfielder and occasionally left winger<br/>Clubs: <span id='content2' data-player='3'>Real Madrid</span>, Internazionale, Galatasay<br/>Market: He was sold to the Real Madrid for 27 million euros<br/>National Dutch Team: Captain<br/>Special talent: Dead-ball specialist. His ambidexterity allows him to have a great passing capacity"
+                },
+                {
+                    "id": "2",
+                    "number": "7",
+                    "type": "PLAYER",
+                    "image": "img/stickers/players/maartenStekelenburg.png",
+                    "content": "Wesley “The Sniper” Sneijder<br/>June 9, 1984 (age 28)<br/>Currently plays at: Galatasaray<br/>Birth Place: Utrecht, Netherlands<br/>Started football career: 7 years old<br/>Amateur club: AFC Ajax – Won 6 trophies<br/>Position: Midfielder and occasionally left winger<br/>Clubs: Real Madrid, Internazionale, Galatasay<br/>Market: He was sold to the Real Madrid for 27 million euros<br/>National Dutch Team: Captain<br/>Special talent: Dead-ball specialist. His ambidexterity allows him to have a great passing capacity"
+                },
+                {
+                    "id": "3",
+                    "number": "40",
+                    "type": "PLAYER",
+                    "image": "img/stickers/players/arjenRobben.png",
+                    "content": "Wesley “The Sniper” Sneijder<br/>June 9, 1984 (age 28)<br/>Currently plays at: Galatasaray<br/>Birth Place: Utrecht, Netherlands<br/>Started football career: 7 years old<br/>Amateur club: AFC Ajax – Won 6 trophies<br/>Position: Midfielder and occasionally left winger<br/>Clubs: Real Madrid, Internazionale, Galatasay<br/>Market: He was sold to the Real Madrid for 27 million euros<br/>National Dutch Team: Captain<br/>Special talent: Dead-ball specialist. His ambidexterity allows him to have a great passing capacity"
+                },
+                {
+                    "id": "4",
+                    "number": "82",
+                    "type": "PLAYER",
+                    "image": "img/stickers/players/dirkKuyt.png",
+                    "content": "Wesley “The Sniper” Sneijder<br/>June 9, 1984 (age 28)<br/>Currently plays at: Galatasaray<br/>Birth Place: Utrecht, Netherlands<br/>Started football career: 7 years old<br/>Amateur club: AFC Ajax – Won 6 trophies<br/>Position: Midfielder and occasionally left winger<br/>Clubs: Real Madrid, Internazionale, Galatasay<br/>Market: He was sold to the Real Madrid for 27 million euros<br/>National Dutch Team: Captain<br/>Special talent: Dead-ball specialist. His ambidexterity allows him to have a great passing capacity"
+                }
+            ]
+        }
+    ]
+}

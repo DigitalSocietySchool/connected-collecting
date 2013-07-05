@@ -1,0 +1,115 @@
+{
+    "response": "NOTIFICATION_RETRIEVE_SUCESS",
+    "stickers": [
+        {
+            "id": "1",
+            "name": "Robin Van Persie",
+            "number": "XX",
+            "sticker_url": "img/teamView/sticker_big.png"
+        },
+        {
+            "id": "2",
+            "name": "Robin Van Persie",
+            "number": "XX",
+            "sticker_url": "img/teamView/sticker_big.png"
+        },
+        {
+            "id": "3",
+            "name": "Robin Van Persie",
+            "number": "XX",
+            "sticker_url": "img/teamView/sticker_big.png"
+        },
+        {
+            "id": "4",
+            "name": "Robin Van Persie",
+            "number": "XX",
+            "sticker_url": "img/teamView/sticker_big.png"
+        },
+        {
+            "id": "5",
+            "name": "Robin Van Persie",
+            "number": "XX",
+            "sticker_url": "img/teamView/sticker_big.png"
+        },
+		 {
+            "id": "1",
+            "name": "Robin Van Persie",
+            "number": "XX",
+            "sticker_url": "img/teamView/sticker_big.png"
+        },
+        {
+            "id": "2",
+            "name": "Robin Van Persie",
+            "number": "XX",
+            "sticker_url": "img/teamView/sticker_big.png"
+        },
+        {
+            "id": "3",
+            "name": "Robin Van Persie",
+            "number": "XX",
+            "sticker_url": "img/teamView/sticker_big.png"
+        },
+        {
+            "id": "4",
+            "name": "Robin Van Persie",
+            "number": "XX",
+            "sticker_url": "img/teamView/sticker_big.png"
+        },
+        {
+            "id": "5",
+            "name": "Robin Van Persie",
+            "number": "XX",
+            "sticker_url": "img/teamView/sticker_big.png"
+        },
+		 {
+            "id": "1",
+            "name": "Robin Van Persie",
+            "number": "XX",
+            "sticker_url": "img/teamView/sticker_big.png"
+        },
+        {
+            "id": "2",
+            "name": "Robin Van Persie",
+            "number": "XX",
+            "sticker_url": "img/teamView/sticker_big.png"
+        },
+		{
+            "id": "2",
+            "name": "Robin Van Persie",
+            "number": "XX",
+            "sticker_url": "img/teamView/sticker_big.png"
+        }
+    ],
+    "videos": [
+        {
+            "id": "1",
+            "name": "Best tricks Roben Van Persie",
+            "duration": "135",
+            "video_img": "img/rvp2.jpg"
+        },
+        {
+            "id": "2",
+            "name": "Best tricks Roben Van Persie",
+            "duration": "80",
+            "sticker_url": "img/rvp3.jpg"
+        },
+		{
+            "id": "2",
+            "name": "Best tricks Roben Van Persie",
+            "duration": "80",
+            "sticker_url": "img/rvp3.jpg"
+        },
+		{
+            "id": "2",
+            "name": "Best tricks Roben Van Persie",
+            "duration": "80",
+            "sticker_url": "img/rvp3.jpg"
+        },
+		{
+            "id": "2",
+            "name": "Best tricks Roben Van Persie",
+            "duration": "80",
+            "sticker_url": "img/rvp3.jpg"
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+{
+	"description": "Het Nederlands voetbalelftal is een team van mannelijke voetballers dat Nederland vertegenwoordigt in internationale wedstrijden.",
+	"flagurl": "./img/teamView/nl_span2.gif",
+	"cuantity": 15,
+	"stickers" : [
+		{"sticker":{
+					"id" : 1,
+					"number" : "XX",
+					"name" : "Maarten Stekelenburg",
+					"imgurl" : "./img/teamView/sticker_big.png"
+					}
+		},
+		{"sticker":{
+					"id" : 2,
+					"number" : "XX",
+					"name" : "Michel Vorm",
+					"imgurl" : "./img/teamView/sticker_big.png"
+					}
+		},
+		{"sticker":{
+					"id" : 3,
+					"number" : "XX",
+					"name" : "Joris Mathijsen",
+					"imgurl" : "./img/teamView/sticker_big.png"
+					}
+		},
+		{"sticker":{
+					"id" : 4,
+					"number" : "XX",
+					"name" : "Dirk Kuyt",
+					"imgurl" : "./img/teamView/sticker_big.png"
+					}
+		},
+		{"sticker":{
+					"id" : 5,
+					"number" : "XX",
+					"name" : "Arjen Robben",
+					"imgurl" : "./img/teamView/sticker_big.png"
+					}
+		},
+		{"sticker":{
+					"id" : 6,
+					"number" : "XX",
+					"name" : "Robin van Persie",
+					"imgurl" : "./img/teamView/sticker_big.png"
+					}
+		},
+		{"sticker":{
+					"id" : 7,
+					"number" : "XX",
+					"name" : "Michel Vorm",
+					"imgurl" : "./img/teamView/sticker_big.png"
+					}
+		},
+		{"sticker":{
+					"id" : 8,
+					"number" : "68",
+					"name" : "Ronald Koeman",
+					"imgurl" : "./img/teamView/sticker_big.png"
+					}
+		},
+		{"sticker":{
+					"id" : 9,
+					"number" : "150",
+					"name" : "Luka Modrik",
+					"imgurl" : "./img/teamView/sticker_big.png"
+					}
+		},
+		{"sticker":{
+					"id" : 10,
+					"number" : "XX",
+					"name" : "Michel Vorm",
+					"imgurl" : "./img/teamView/sticker_big.png"
+					}
+		},
+		{"sticker":{
+					"id" : 11,
+					"number" : "C",
+					"name" : "Cristiano Ronaldo",
+					"imgurl" : "./img/teamView/sticker_big.png"
+					}
+		},
+		{"sticker":{
+					"id" : 12,
+					"number" : "XX",
+					"name" : "Michel Vorm",
+					"imgurl" : "./img/teamView/sticker_big.png"
+					}
+		},
+		{"sticker":{
+					"id" : 13,
+					"number" : "XX",
+					"name" : "Michel Vorm",
+					"imgurl" : "./img/teamView/sticker_big.png"
+					}
+		},
+		{"sticker":{
+					"id" : 14,
+					"number" : "XX",
+					"name" : "Michel Vorm",
+					"imgurl" : "./img/teamView/sticker_big.png"
+					}
+		},
+		{"sticker":{
+					"id" : 15,
+					"number" : "XX",
+					"name" : "Michel Vorm",
+					"imgurl" : "./img/teamView/sticker_big.png"
+					}
+		}
+		]
+}

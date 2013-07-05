@@ -1,0 +1,25 @@
+{
+    "response": "SUCCESS",
+    "users": [
+        {
+            "name": "ruben",
+            "id": "1"
+        },
+        {
+            "name": "tim",
+            "id": "2"
+        },
+        {
+            "name": "davi",
+            "id": "3"
+        },
+        {
+            "name": "monica",
+            "id": "4"
+        },
+        {
+            "name": "steven",
+            "id": "5"
+        }
+    ]
+}

@@ -1,0 +1,94 @@
+{
+    "response": "SUCCESS",
+    "users": [
+        {
+            "id": 1,
+            "name": "Davi Alves",
+            "creationDate": 1369353600000,
+            "lastLoginDate": 1369353600000,
+            "rank": {
+                "id": 1,
+                "alias": "Beginner",
+                "level": "BEGINNER",
+                "goal": 20,
+                "badge_url": "/begginer_badge.png"
+            },
+            "stickersNextLevel": 10,
+            "stickers": [
+                {
+                    "id": 3,
+                    "number": "133",
+                    "image": "img/design/players/dennisBergkamp.png",
+                    "type": "PLAYER",
+                    "content": []
+                },
+                {
+                    "id": 47,
+                    "number": "E2",
+                    "image": "img/design/players/ikerCasillas.png",
+                    "type": "PLAYER",
+                    "content": []
+                },
+                {
+                    "id": 49,
+                    "number": "E3",
+                    "image": "img/design/players/davidSilva.png",
+                    "type": "PLAYER",
+                    "content": []
+                },
+                {
+                    "id": 55,
+                    "number": "E1",
+                    "image": "img/design/players/xaviHernandez.png",
+                    "type": "PLAYER",
+                    "content": []
+                },
+                {
+                    "id": 63,
+                    "number": "A3",
+                    "image": "img/design/players/timHoward.png",
+                    "type": "PLAYER",
+                    "content": []
+                },
+                {
+                    "id": 64,
+                    "number": "A1",
+                    "image": "img/design/players/clintDempsey.png",
+                    "type": "PLAYER",
+                    "content": []
+                },
+                {
+                    "id": 65,
+                    "number": "A2",
+                    "image": "img/design/players/fabianJohnson.png",
+                    "type": "PLAYER",
+                    "content": []
+                },
+                {
+                    "id": 6,
+                    "number": "7",
+                    "image": "img/design/players/leroyFer.png",
+                    "type": "PLAYER",
+                    "content": []
+                },
+                {
+                    "id": 5,
+                    "number": "82",
+                    "image": "img/design/players/ruudGullit.png",
+                    "type": "PLAYER",
+                    "content": []
+                },
+                {
+                    "id": 4,
+                    "number": "40",
+                    "image": "img/design/players/philipCocu.png",
+                    "type": "PLAYER",
+                    "content": []
+                }
+            ],
+            "avatar_url": "/avatar.png",
+            "new_items_count": 0
+        }
+    ],
+    "stickerName": null
+}

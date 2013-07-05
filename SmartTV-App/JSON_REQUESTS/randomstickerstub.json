@@ -1,0 +1,35 @@
+{
+    "response": "STICKERS_RETRIEVE_SUCESS",
+    "stickers": [
+        {
+            "id": "1",
+            "number": "C",
+            "name": "Maarten Stekelenburg"
+        },
+        {
+            "id": "2",
+            "number": "150",
+            "name": "Maarten Stekelenburg"
+        },
+        {
+            "id": "3",
+            "number": "68",
+            "name": "Maarten Stekelenburg"
+        },
+		{
+            "id": "1",
+            "number": "C",
+            "name": "Maarten Stekelenburg"
+        },
+        {
+            "id": "2",
+            "number": "150",
+            "name": "Maarten Stekelenburg"
+        },
+        {
+            "id": "3",
+            "number": "68",
+            "name": "Maarten Stekelenburg"
+        }
+    ]
+}

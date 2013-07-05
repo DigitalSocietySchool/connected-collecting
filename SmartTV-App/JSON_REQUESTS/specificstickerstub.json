@@ -1,0 +1,21 @@
+{
+	"response":"STICKER_RETRIEVE_SUCESS",
+	"id":1,
+	"name":"Robin Van Persie",
+	"urlimg":"img/robin_sticker.jpg",
+	"number":"XX",
+	"content":[
+		{
+			"videourl":"videos/video1.mp4",
+			"videoimgurl":"img/video_vanpersi.png"
+		},
+		{
+			"videourl":"videos/video1.mp4",
+			"videoimgurl":"img/rvp2.jpg"
+		},
+		{
+			"videourl":"videos/video1.mp4",
+			"videoimgurl":"img/rvp3.jpg"
+		}
+	]
+}
