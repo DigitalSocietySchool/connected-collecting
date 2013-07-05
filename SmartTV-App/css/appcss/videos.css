@@ -1,0 +1,128 @@
+/*Video html style*/
+
+.videos-overview-list{
+    list-style: none;
+    margin-left: 60px;
+}   
+
+.videos-overview-list > li{
+    display: inline-block;
+    margin-left: 41px;
+    position:relative;
+}
+
+.video-title{
+    position:absolute;
+    bottom:0px;
+    background-color: rgba(0,0,0,0.8);
+    color:white;
+    width: 100%;
+    text-align: center;
+    height: 27px;
+    vertical-align: middle;
+    line-height: 27px;
+}
+
+.white-overlay li:after{
+    content:"";
+    position: absolute;
+    width:236px;
+    height: 149px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+body .video-glow:after{
+    background-color: rgba(255,255,255,0);
+}
+
+.circle{
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    width: 13px;
+    height: 13px;
+    background: transparent;
+    border: 2px solid #3a5d7e;
+}
+
+.circle-glow{
+    background: #3a5d7e;
+}
+
+#down-menu{
+    list-style: none;
+    margin-top: 6px;
+    text-align: center;
+    margin-left: 4px;
+}
+
+#down-menu > li{
+    display: inline-block;
+}
+
+.left-button{
+    margin-right: 10px;
+    background: #3a5d7e;
+    font-size: 24px;
+    padding: 8px;
+    width: 148px;
+    text-align:right;
+    position:relative;
+}
+
+.left-button:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 164px;
+    border-width: 0px 36px 36px 0px;
+    border-style: solid;
+    border-color: transparent #3a5d7e;
+}
+
+.right-button{
+    margin-left: 14px;
+    background: #3a5d7e;
+    font-size: 24px;
+    padding: 8px;
+    width: 148px;
+    text-align:left;
+    position:relative;
+}
+
+.right-button:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -36px;
+    border-width: 0px 0px 36px 36px;
+    border-style: solid;
+    border-color: transparent #3a5d7e;
+}
+
+#down-menu .video-glow div{
+    background-color: #e74c3c;
+}
+
+#down-menu .video-glow div:before{
+    border-color: transparent #e74c3c;
+}
+
+#down-menu .video-glow div:after{
+    border-color: transparent #e74c3c;
+}
+
+.invi{
+    color:transparent;
+    background-color: transparent;
+}
+
+.invi:after{
+    border-color:transparent;
+}
+
+.invi:before{
+    border-color:transparent;
+}

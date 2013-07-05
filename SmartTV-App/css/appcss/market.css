@@ -1,0 +1,452 @@
+/*Market html style*/
+
+/*OPTION SELECTION*/
+#option-list li{
+    margin-top: 85px;
+    margin-bottom: 0px;
+    font-size: 21px;
+}
+
+.option-glow{
+    font-size: 32px !important;
+    line-height: 32px !important;
+    color:white;
+}
+
+#loading{
+    margin-top: 210px;
+    display:block;
+    text-align:center;
+}
+
+ul{
+    list-style:none;
+}
+
+#option-list{
+    margin-left: -56px;
+    text-align: center;
+}
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 19px solid transparent;
+    border-right: 19px solid transparent;
+    
+    border-bottom: 32px solid black;
+
+    position:absolute;
+    left:102px;
+    top:301px;
+    border-bottom-color:#e74c3c;
+    display:none;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 19px solid transparent;
+    border-right: 19px solid transparent;
+    
+    border-top: 32px solid #f00;
+
+    position:absolute;
+    left:102px;
+    top:396px;
+    border-top-color:#e74c3c;
+}
+
+#black_element{
+    width:100px;
+    height:300px;
+    display:inline-block;
+}
+
+
+#element-selected{
+    position:absolute;
+    width: 188px;
+    left: 28px;
+    top: 342px;
+    background-color:#e74c3c;
+    height:40px;
+    z-index:-1
+}
+
+/*Notification numbers*/
+
+.option-glow #request-number{
+    background-color: #e74c3c;
+    margin-left: 50px;
+}
+
+.option-glow #request-option{
+    margin-left: 75px;
+}
+
+.option-glow #offered-number{
+    background-color: #e74c3c;
+    margin-left: 50px;
+}
+
+.option-glow #offered-option{
+    margin-left: 75px;
+}
+
+#offered-number{
+    margin-left: 20px;
+    height: 40px;
+    background-color: #3a5d7e;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color:white;
+}
+
+#offered-option{
+    margin-left: 45px;
+}
+
+#request-number{
+    margin-left: 20px;
+    height: 40px;
+    background-color: #3a5d7e;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    color:white;
+}
+
+#request-option{
+    margin-left: 45px;
+}
+
+
+/*Stickers trading accept or decline*/
+#people-requests-container{
+    margin-top: 80px;
+    display:none;
+}
+
+#sticker-to-change{
+    margin-left: 40px;
+}
+
+#sticker-to-get{
+    margin-right: -20px;
+}     
+
+#trading-arrows{
+    margin-left: -32px;
+    margin-top: 105px;
+}       
+
+.button-users-requests{
+    margin-top: 40px;
+    display: inline-block;
+    width: 150px;
+    height:51px;
+    background-color: #3a5d7e;
+    color:white;
+    line-height: 51px;
+    vertical-align: middle;
+    font-size: 24px;
+}
+
+#decline-button{
+    margin-right: -30px;
+    padding-right: 20px;
+    position:relative;
+}
+
+#accept-button{
+    margin-left: 30px;
+    padding-left: 20px;
+    position: relative;
+
+}
+
+#accept-button:after{
+    content:"";
+    position:absolute;
+    bottom: 0; /* value = - border-top-width - border-bottom-width */
+    right: -51px;
+    border-width: 0px 0px 51px 51px;
+    border-style: solid;
+    border-color: transparent #3a5d7e;    
+}
+
+#decline-button:before{
+    content:"";
+    position:absolute;
+    bottom: 0; /* value = - border-top-width - border-bottom-width */
+    right: 170px; /* controls horizontal position */
+    border-width: 0px 51px 51px 0px; /* vary these values to change the angle of the vertex */
+    border-style: solid;
+    border-color: transparent #3a5d7e;
+}
+
+.up-sticker{
+
+    display: block;
+    width: 203px;
+    margin-left: 16px;
+    background-color: #2C3E50;
+    text-align: center;
+    margin-top: -43px;
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 23px;
+    color: white;
+    position: relative;
+
+}
+
+.glow-button{
+    background-color: #e74c3c;
+}
+
+.glow-button:after{
+    border-color:transparent #e74c3c !important;
+}
+
+.glow-button:before{
+    border-color:transparent #e74c3c !important;
+}
+
+#background-sticker-trade-1{
+    position:absolute;
+    width:252px;
+    height:371px;
+    left:342px;
+    top:177px;
+    background-color:#a0a9b1;
+    z-index:-1;
+}
+
+#background-sticker-trade-2{
+    position:absolute;
+    width:252px;
+    height:371px;
+    left:950px;
+    top:177px;
+    background-color:#a0a9b1;
+    z-index:-1;
+}
+
+/*Market overview*/
+
+#news{
+    color: white;
+    font-size: 24px;
+    line-height: 24px;
+    margin-top: 30px;
+    margin-bottom: -30px;
+}
+
+#content-news{
+    background-color: #a0a9b1;
+    padding:20px;
+    width: 773px;
+}
+
+#market-overview{
+    text-align: center;
+}
+
+.title-overview-bar{
+    width: 238px;
+    height: 27px;
+    background-color: #2c3e50;
+    margin-top: 20px;
+    position: relative;
+    margin-left: -18px;
+}
+
+.left-title-bar:after{
+    content:"";
+    position:absolute;
+    border-width: 0px 0px 27px 27px;
+    border-style: solid;
+    border-color: transparent #2c3e50;
+    bottom:0px;
+    right:-27px;
+}
+
+.right-title-bar:before{
+    content:"";
+    position:absolute;
+    border-width: 0px 27px 27px 0px;
+    border-style: solid;
+    border-color: transparent #2c3e50;
+    bottom:0px;
+    right:238px;   
+}
+
+.right-title-bar{
+     margin-left: -54px; 
+}
+
+.title-name{
+    margin-top: 26px;
+    font-size: 27px;
+    display: inline-block;
+    margin-left: -143px;
+    width: 232px;
+}
+
+.sticker-img-overview{
+    width:132px;
+}
+
+.stickers-list-overview{
+    margin-left: -181px;
+    margin-top: 20px;
+}
+
+.stickers-list-overview li{
+    display: inline-block;
+    margin-left: 44px;
+    position: relative;
+}
+
+.whitelay li:after{
+    content:"";
+    position:absolute;
+    width:132px;
+    height:200px;
+    bottom:0px;
+    left:0px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.sticker-glow:after{
+    background-color: rgba(255,255,255,0) !important;
+}
+
+.button-glow{
+    border-color:#e74c3c !important;
+}
+
+/*Titles of requests to the user*/
+#up-sticker-left:after {
+    content: "";
+    position: absolute;
+    border-width: 0px 0px 29px 29px;
+    border-style: solid;
+    border-color: transparent #2c3e50;
+    bottom: 0px;
+    right: -29px;
+}
+
+#up-sticker-left{
+    text-align: left;
+    padding: 3px;
+    padding-left: 10px;
+    width: 83px;
+    margin-left: 18px;
+} 
+
+#up-sticker-right{
+    text-align: right;
+    padding: 3px;
+    padding-right: 10px;
+    width: 200px;   
+    margin-left: 14px;
+}
+
+#up-sticker-right:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -29px;
+    border-width: 0px 29px 29px 0px;
+    border-style: solid;
+    border-color: transparent #2c3e50;
+}
+
+/*Messages for user when there are no trades*/
+#no-request-from-people{
+    text-align: center;
+    font-size: 28px;
+    color:black;
+    margin-top: 210px
+}
+
+#no-last-trades{
+    font-size: 26px;
+    color: black;
+    margin-top: 100px;
+    margin-left: -133px;
+    display:none;
+}
+
+#no-user-made-requests{
+    text-align: center;
+    font-size: 28px;
+    color:black;
+    margin-top: 210px
+}
+
+/*Stickers request by user*/
+/**Matriz de stickers**/
+
+#your-requests-container{
+    display:none;
+}
+
+#stickers-row-1{
+    text-align:left;
+    margin-top: 118px;    
+}
+
+#list-sticker-1{
+    margin-left: 15px;
+}
+
+#stickers-row-1 li{
+    display:inline-block;
+}
+
+.list-sticker{
+    margin-left:27px;
+    position:relative;
+}
+
+.sticker-glow:after{
+    background-color: rgba(255,255,255,0) !important;
+}
+
+/**Stickers naming**/
+
+.stickers-names{
+    position: absolute;
+    left: 15px;
+    top: 92px;
+    font-size: 15px;
+    color: black;
+    width: 105px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*Timers*/
+
+.timer{
+    margin-top: 20px;
+    margin-left: 10px;
+    color:white;
+    font-size: 21px;
+}
+
+.timer img{
+    display: inline;
+}
+
+.market-modal{
+    text-align:center;
+    font-size:28px;
+}

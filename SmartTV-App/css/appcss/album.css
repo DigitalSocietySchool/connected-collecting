@@ -1,0 +1,366 @@
+/*album.css*/
+
+/*COUNTRY SELECTION*/
+#flag-list li{
+    margin-top: 85px;
+    margin-bottom: 0px;
+    font-size: 24px;
+}
+
+.flag-glow{
+    font-size: 32px;
+    line-height: 32px;
+    color:white;
+}
+
+#loading{
+    margin-top: 210px;
+}
+
+ul{
+    list-style:none;
+}
+
+#flag-list{
+    margin-left: -63px;
+    margin-top:-450px;
+}
+
+#black_element{
+    width:100px;
+    height:300px;
+    display:inline-block;
+}
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 19px solid transparent;
+    border-right: 19px solid transparent;
+    
+    border-bottom: 32px solid black;
+
+    position:absolute;
+    left:103px;
+    top:323px;
+    border-bottom-color:#e74c3c
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 19px solid transparent;
+    border-right: 19px solid transparent;
+    
+    border-top: 32px solid #f00;
+
+    position:absolute;
+    left:103px;
+    top:421px;
+    border-top-color:#e74c3c
+}
+
+#element-selected{
+    position:absolute;
+    width: 188px;
+    left: 28px;
+    top: 368px;
+    background-color:#e74c3c;
+    height:40px;
+    z-index:-1
+}
+
+.list-sticker > img{
+    width:135px;
+}
+
+/**Matriz de stickers**/
+#complete-view{
+    display:none;
+    margin-left:-15px;
+}
+
+.no-margin{
+    margin: 0px;    
+}
+
+#stickers-row-1{
+    text-align:left;    
+}
+
+#list-sticker-1{
+    margin-left:-53px;   
+}
+
+#list-sticker-2{
+    margin-left: -125px;
+}
+
+#stickers-row-1 li{
+    display:inline-block;
+}
+
+.list-sticker{
+    margin-left:27px;
+    position:relative;
+}
+
+#stickers-row-2 li{
+    display:inline-block;
+}
+
+ul img{
+    margin-left:-5px;
+    margin-right:-5px;
+    border:5px solid transparent;   
+}
+
+.sticker-glow img{
+    /*border-color: #e74c3c;*/
+}
+
+.whitelay li:after{
+    content:"";
+    position:absolute;
+    width:135px;
+    height:205px;
+    top:5px;
+    left:0px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.sticker-glow:after{
+    background-color: rgba(255,255,255,0) !important;
+}
+
+/**Stickers naming**/
+
+.stickers-names{
+    position: absolute;
+    left: 15px;
+    top: 92px;
+    font-size: 15px;
+    color: black;
+    width: 105px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/**Player view**/
+
+#team-logo-container{
+    width:250px;
+    height:380px;
+    background-color:rgba(44,62,80,0.5);
+    margin-top:60px;
+    margin-left:20px;
+    position:relative;
+    left: 0px;
+    top:0px;
+}
+
+#club-title{
+    display: inline-block;
+    position: relative;
+    color: white;
+    background: #3a5d7e;
+    height: 37px;
+    width: 172px;
+    text-align: left;
+    font-size: 26px;
+    line-height: 37px;
+    padding-left: 10px;
+}
+
+#club-title:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -37px;
+    border-width: 0px 0px 37px 37px;
+    border-style: solid;
+    border-color: transparent #3a5d7e;
+}
+
+#club-name{
+    display: inline-block;
+    font-size: 26px;
+    width: 250px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+#player-info-container{
+    width: 560px;
+    height:380px;
+    background-color:rgba(44,62,80,0.5);
+    margin-top:60px;
+    margin-left:0px;
+    position:relative;
+    left: 0px;
+    top:0px;
+}
+
+#player-img-big{
+    width:250px;
+    margin-top:60px;
+    margin-left:50px;
+}
+
+#info-title{
+    display: inline-block;
+    position: relative;
+    color: white;
+    background: #3a5d7e;
+    height: 37px;
+    width: 140px;
+    text-align: right;
+    font-size: 26px;
+    line-height: 37px;
+    padding-right: 10px;
+    left:130px;
+}
+
+#info-title:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 150px;
+    border-width: 0px 37px 37px 0px;
+    border-style: solid;
+    border-color: transparent #3a5d7e;
+}
+
+#info-text{
+    color:white;
+    margin-left:10px;
+    float:left;
+    width:270px;
+    margin-top:50px;
+    font-size:21px;
+    line-height:26px;
+    height:310px;
+}
+
+#logo-club{
+    width:150px; 
+    margin-left:50px;
+    margin-top:20px;
+}
+
+#field-image{
+    margin-left: 50px;
+    width:180px;
+    margin-top:80px;
+}
+
+#marker{
+    position:absolute;
+    width:30px;
+    height:35px;
+    left: 406px;
+    top: 130px;
+    background-color:#3a5d7e;
+}
+
+#marker:after{
+    content: "";
+    position: absolute;
+    bottom: -22px;
+    border-width: 22px 15px 0px 15px;
+    border-style: solid;
+    border-color: #3a5d7e transparent;
+}
+
+#position-text{
+    text-align:center;
+    margin-top:40px;
+    font-size:24px;
+    color:white;
+}
+
+#info-view{
+    display:none;
+    text-align:left;
+}
+
+#info-view .span3{
+    margin-left: 30px;
+}
+
+#button-previous-player{
+    display: inline-block;
+    position: relative;
+    color: white;
+    background: #3a5d7e;
+    width:210px;
+    height: 34px;
+    text-align: right;
+    font-size: 24px;
+    line-height: 34px;
+    padding-right: 10px;
+    left:-25px;
+    margin-top: 20px;
+}
+
+#button-previous-player:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 220px;
+    border-width: 0px 34px 34px 0px;
+    border-style: solid;
+    border-color: transparent #3a5d7e;
+}
+
+#button-overview{
+    display: inline-block;
+    position: relative;
+    color: white;
+    background: #3a5d7e;
+    width:178px;
+    height: 34px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 34px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+#button-next-player{
+    display: inline-block;
+    position: relative;
+    color: white;
+    background: #3a5d7e;
+    width:210px;
+    height: 34px;
+    text-align: left;
+    font-size: 24px;
+    line-height: 34px;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+#button-next-player:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -34px;
+    border-width: 0px 0px 34px 34px;
+    border-style: solid;
+    border-color: transparent #3a5d7e;
+}
+
+.button-glow{
+    background-color: #e74c3c !important;
+}
+
+.button-glow:after{
+    border-color: transparent #e74c3c !important;
+}
+
+.button-glow:before{
+    border-color: transparent #e74c3c !important;
+}

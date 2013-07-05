@@ -1,0 +1,261 @@
+/**CSS FOR HOME FILE**/
+
+/*MENU-INSIDE*/
+
+    /*COLUMNS*/
+    #home-left-column{
+        position:relative;
+        margin-top: -20px;
+    }
+
+    #home-right-column{
+        margin-top: -20px;
+    }
+
+    .menu-left-button{
+        position: absolute;
+        left: 30px;
+        top: 0;
+    }
+
+    .left-menu-button{
+        display:inline-block;
+        position:relative;
+        color:#000;
+        background:#3b5d7f;
+        height: 40px;
+        width: 310px;
+    }
+
+    .left-menu-button:after{
+        content:"";
+        position:absolute;
+        bottom: 0; /* value = - border-top-width - border-bottom-width */
+        right: -40px;
+        border-width: 0px 0px 40px 40px;
+        border-style: solid;
+        border-color: transparent #3b5d7f;
+    }
+
+    #image-sticker-album-button{
+        margin-left:30px;
+        width:595px;
+    }
+
+    .button-text{
+        font-size: 24px;
+        padding-left: 30px;
+        color:white;
+        vertical-align: middle;
+        line-height: 40px;
+        margin-right: 30px;
+    }
+
+    .menu-left-button-2{
+        top:287px;
+    }
+
+    .menu-right-button{
+        position: absolute;
+        left: 939px;
+        top: 120px;
+        text-align: right;
+    }
+
+    .menu-right-button-2{
+        top:522px;
+    }
+
+    .right-menu-button{
+        display:inline-block;
+        position:relative;
+        color:#000;
+        background:#3b5d7f;
+        height: 40px;
+        width: 310px;
+        z-index: 2;
+    }
+
+    .right-menu-button:before{
+        content:"";
+        position:absolute;
+        bottom: 0; /* value = - border-top-width - border-bottom-width */
+        right: 310px; /* controls horizontal position */
+        border-width: 0px 40px 40px 0px; /* vary these values to change the angle of the vertex */
+        border-style: solid;
+        border-color: transparent #3b5d7f;
+    }
+
+    #video-miniature{
+        margin-left:4px;
+        width:595px;
+    }
+
+    #video-desc{
+        position:absolute;
+        left:4px;
+        bottom:-1px;
+        height: 60px;
+        width: 595px;
+        background-color: rgba(0,0,0,.8);
+        text-align: center;
+        vertical-align: middle;
+        line-height: 60px;
+        color:white;
+        font-size: 30px;
+    }
+
+    .glow .button-title{
+        background-color: #e74c3c;
+    }
+
+    .glow .button-title:after{
+        border-color:transparent #e74c3c;
+    }
+
+    .glow .button-title:before{
+        border-color:transparent #e74c3c;
+    }
+
+    .glow span:before{
+        background-color: rgba(255,255,255,0) !important;
+    }
+
+    .glow div:before{
+        background-color: rgba(255,255,255,0) !important;   
+    }
+
+    /*TRADING STICKERS SECTION*/
+
+    .trading-sticker{
+        margin-top: 2px;
+        width:595px;
+        color:white;
+        font-size: 21px;
+    }
+
+    .trading-sticker span{
+        margin-left: 20px; 
+    }
+
+    #trading-stickers{
+        margin-top: -111px;
+    }
+
+    .sticker-trade-ok{
+        background-color: #348627;
+    }
+
+    .sticker-trade-fail{
+        background-color: #842a2a;
+    }
+
+    .sticker-trade-wait{
+        background-color: #3b5d7f;
+    }    
+
+    .trade-img-status{
+        float: right;
+        margin-top: 4px;
+        margin-right: 10px;
+    }
+
+    #sticker-album-img:before{
+        content:"";
+        width:595px;
+        height:262px;
+        background-color: rgba(255,255,255,0.5);
+        position: absolute;
+        left: 30px;
+        bottom: 0;
+    }
+
+    #sticker-album-img{
+        position: relative;
+        width: 595px;
+        height: 263px;
+        display: block;
+    }
+
+    #sticker-market{
+        background-color:#5684b3;
+        width:595px;
+        height:263px;
+        background-image:url('../../img/UI-elements/home-ui/sticker-market-2.png');
+    }
+
+    #sticker-market-button{
+        margin-top:25px;
+        margin-left:30px;
+    }
+
+    #sticker-market-img:before{
+        content:"";
+        width:595px;
+        height:263px;
+        background-color: rgba(255,255,255,0.5);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+
+    #sticker-market-img{
+        position: relative;
+        width: 595px;
+        height: 263px;
+        display: block;
+    }
+
+    #last-video-img:before{
+        content:"";
+        width:595px;
+        height:379px;
+        background-color: rgba(255,255,255,0.5);
+        position: absolute;
+        left: 4px;
+        bottom: -1px;
+        z-index: 1;
+    }
+
+    #last-video-img{
+        position: relative;
+        width: 595px;
+        height: 378px;
+        display: block;
+    }
+
+    #play-button{
+        position:absolute;
+        left:275px;
+        top:170px;
+    }
+
+    #overview-video-img{
+        position: relative;
+        width: 595px;
+        height: 146px;
+        display: block;
+    }
+
+    #overview-video-img:before{
+        content:"";
+        width:594px;
+        height:147px;
+        background-color: rgba(255,255,255,0.5);
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        z-index: 1;
+    }
+
+    #videos-overview{
+        background-color:#5684b3;
+        width:595px;
+        height:147px;
+        background-image:url('../../img/UI-elements/home-ui/video-overview.png');
+    }
+
+    #videos-button{
+        margin-left:4px;
+        margin-top:25px;
+    }

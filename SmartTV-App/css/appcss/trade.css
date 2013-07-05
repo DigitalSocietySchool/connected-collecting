@@ -1,0 +1,206 @@
+/**Trade html style**/
+
+/*OPTION SELECTION*/
+#option-list li{
+    margin-top: 85px;
+    margin-bottom: 0px;
+    font-size: 21px;
+}
+
+.option-glow{
+    font-size: 32px !important;
+    line-height: 32px !important;
+    color:white;
+}
+
+#loading{
+    margin-top: 210px;
+}
+
+ul{
+    list-style:none;
+}
+
+#option-list{
+    margin-left: -40px;
+    text-align: center;
+    margin-top:-218px;
+}
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 26px solid transparent;
+    border-right: 26px solid transparent;
+    
+    border-bottom: 30px solid black;
+
+    position:absolute;
+    left:105px;
+    top:340px;
+    border-bottom-color:#e74c3c;
+    display:none;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 26px solid transparent;
+    border-right: 26px solid transparent;
+    
+    border-top: 30px solid #f00;
+    position:absolute;
+    left:105px;
+    top:445px;
+    border-top-color:#e74c3c;
+}
+
+#element-selected{
+    position:absolute;
+    width:205px;
+    left:28px;
+    top:390px;
+    background-color:#e74c3c;
+    height:40px;
+    z-index:-1
+}
+
+/*Stickers-to-give-style*/
+
+#sticker-to-give-container{
+    width:935px;
+    height:300px;
+    background-color:rgba(44,62,80,0.3);
+    position:relative;
+    margin-top:100px;
+    margin-left:-10px;
+    text-align: center;
+    vertical-align: middle;
+    display:none;
+}
+
+#sticker-to-give-title{
+    font-size: 24px;
+    line-height: 35px;
+    height: 35px;
+    color:white;
+}
+
+#title-container-style{
+    display: inline-block;
+    width: 600px;
+    background-color: #2c3e50;
+    height: 35px;
+    position: relative;
+}
+
+#title-container-style:before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 600px; /*600px*/ /*330px for old philips*/
+    border-width: 0px 35px 35px 0px;
+    border-style: solid;
+    border-color: transparent #2c3e50;
+
+}
+
+#title-container-style:after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -35px; /*-35px*/ /*-305px for old philips*/
+    border-width: 0px 0px 35px 35px;
+    border-style: solid;
+    border-color: transparent #2c3e50;
+}
+
+/*Sticker list style*/
+.sticker-img-trade{
+    width:140px;
+}
+
+.stickers-list-trade{
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+.stickers-list-trade li{
+    display:inline-block;
+    margin-left: 40px;
+    position: relative;
+}
+
+.whitelay li:after{
+    content:"";
+    position:absolute;
+    width:140px;
+    height:212px;
+    bottom:0px;
+    left:0px;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.sticker-glow:after{
+    background-color: rgba(255,255,255,0) !important;
+}
+
+#confirmation-text{
+    text-align: center;
+    color:white;
+    font-size: 24px;
+    margin-top: 60px;
+}
+
+.button-go-back{
+    background-color: #E74C3C;
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#no-stickers{
+    text-align: center;
+    color:white;
+    font-size: 24px;
+    margin-top: 20px;
+    display:none;
+}
+
+#first-loading{
+    text-align:center;
+    margin-top:200px;
+}
+
+#no-users > div{
+    text-align:center;
+    font-size:24px;
+    margin-top:200px;
+}
+
+#no-users{
+    display:none;
+}
+
+#black_element{
+    width:100px;
+    height:300px;
+    display:inline-block;
+}
+
+#content-after-load{
+    display:none;
+}
+
+/*Popup styles*/            
+
+#request-success{
+    text-align:center;
+    font-size:28px;
+}
+
+#request-error{
+    text-align:center;
+    font-size:28px;
+}

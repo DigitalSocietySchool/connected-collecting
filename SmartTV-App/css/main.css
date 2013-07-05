@@ -1,0 +1,284 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/*TOP-UI*/
+
+    /*NAME AND PROGRESS UI*/
+        
+        /*UI-BACKGROUND-TRIANGLES*/
+        .border-ui-element {
+            display:inline-block;
+            position:relative;
+            color:#000;
+            background:#2c3e50;
+            width:150px;
+            height: 46px;
+        }
+
+        .border-ui-element-right:after {
+            content:"";
+            position:absolute;
+            bottom: 0; /* value = - border-top-width - border-bottom-width */
+            right: -46px; /* controls horizontal position */
+            border-width: 46px 0 0 46px; /* vary these values to change the angle of the vertex */
+            border-style: solid;
+            border-color: transparent #2c3e50;
+            /* reduce the damage in FF3.0 */
+            
+            display:block; 
+            
+        }
+
+        .border-ui-element-left:after{
+            content:"";
+            position:absolute;
+            bottom: 0; /* value = - border-top-width - border-bottom-width */
+            right: 150px; /* controls horizontal position */
+            border-width: 46px 46px 0 0; /* vary these values to change the angle of the vertex */
+            border-style: solid;
+            border-color: transparent #2c3e50;
+            /* reduce the damage in FF3.0 */
+            
+            display:block; 
+        }
+
+        .border-ui-element-left-hover:after{
+            content:"";
+            position:absolute;
+            bottom: 0; /* value = - border-top-width - border-bottom-width */
+            right: 150px; /* controls horizontal position */
+            border-width: 46px 46px 0 0; /* vary these values to change the angle of the vertex */
+            border-style: solid;
+            border-color: transparent rgba(59,93,127,.2);
+            /* reduce the damage in FF3.0 */
+            
+            display:block; 
+        }
+
+        .border-ui-element-left-hover{
+            background:rgba(59,93,127,.2);
+        }
+
+        /*TEXT-STYLE-POSITION*/
+        #name-container{
+            margin-left: 52px;
+            margin-right: -52px;
+        }
+
+        #name-container p{
+            color:white;
+            padding-left: 10px;
+            margin:0;
+        }
+
+        #user-name{
+            font-size: 21px;
+            padding-top: 4px;
+        }
+
+        #user-league{
+            font-size: 21px;
+            padding-bottom: 10px;
+        }
+
+        #progress-container{
+            text-align: right;
+            height: 100px;
+            margin-left: 16.5px;
+        }
+
+        #progress-cuantity{
+            color: white;
+            margin:0;
+            font-size: 27px;
+            height: 46px;
+            line-height: 46px;
+            vertical-align: middle;
+            text-align: center;
+        } 
+
+    /*MAIN-TITLE*/
+        /*UI-BACKGROUND-AND-LOGO*/
+        .left-main-title{
+            display:inline-block;
+            position:relative;
+            color:#000;
+            background:#2c3e50;
+            height: 46px;
+            margin-left: 130px;
+            width: 300px;
+        }
+
+        .left-main-title:before{
+            content:"";
+            position:absolute;
+            bottom: 0; /* value = - border-top-width - border-bottom-width */
+            right: 300px; /* controls horizontal position */
+            border-width: 0px 46px 46px 0px; /* vary these values to change the angle of the vertex */
+            border-style: solid;
+            border-color: transparent #2c3e50;
+        }
+
+        .right-main-title{
+            display:inline-block;
+            position:relative;
+            color:#000;
+            background:#2c3e50;
+            height: 46px;
+            width: 330px;
+            text-align: right;
+        }
+
+        .right-main-title:before{
+            content:"";
+            position:absolute;
+            bottom: 0; /* value = - border-top-width - border-bottom-width */
+            right: -46px;
+            border-width: 0px 0px 46px 46px;
+            border-style: solid;
+            border-color: transparent #2c3e50;
+        }
+
+        #logo-image{
+            position: absolute;
+            z-index: 10;
+            left: 550px;
+            top: 5px;
+            width: 180px;
+        }
+
+        #image-stickers-progress{
+            padding-right:40px;
+            width:50px;
+        }
+
+        #overlay-progress{
+            position:relative;
+            top:-46px;
+        }
+        /*MAIN-LOGO-TEXT*/
+        .main-title-text{
+            font-size: 35px;
+            color:white;
+            vertical-align: middle;
+            line-height: 50px;
+        }
+
+    /*Background*/
+
+    #background{
+        position:absolute;
+        z-index:-1
+    }
+
+/*Modal box css*/
+
+.modal-header{
+    background-color: #3a5d7e;
+    color: white;
+    position: relative;
+    height: 33px;
+}
+
+.modal-header:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: -51px;
+    border-width: 0px 0px 51px 51px;
+    border-style: solid;
+    border-color: transparent #3a5d7e;
+}
+
+.modal-header:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 450px;
+    border-width: 0px 51px 51px 0px;
+    border-style: solid;
+    border-color: transparent #3a5d7e;
+}
+
+.modal-body{
+    background-color: rgba(184,184,184,0.5);
+    border: none;
+}
+
+.modal{
+    border: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: 450px;
+    margin-left: -225px;
+}
+
+.modal a{
+    display:inline-block;
+    background-color: #365574;
+    color:white;
+    font-size: 26px;
+    line-height: 30px;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.modal a:hover{
+    font-style: normal;
+    text-decoration: none;  
+}
+
+.modal .button-glow{
+    background-color: #e74c3c;
+}
+
+.modal h3{
+
+}
+
+#mediaobject{
+    position:absolute;
+    left:0px;
+    top:0px;
+    display:none;
+    z-index:200;
+}
+
+#loadingImage{
+    position:absolute;
+    left:0px;
+    top:0px;
+    display:none;
+    background-color:rgba(0,0,0,.5);
+    width:1280px;
+    height:720px;
+    z-index:200;
+    text-align:center;
+}
+
+#resume-video{
+    text-align:center;
+    font-size:24px;
+}
+
+#mediaobjectaudio{
+    position:absolute;
+    left:0px;
+    top:0px;
+    width:0px;
+    height:0px;
+}
+
+#back-arrow{
+    position:absolute;
+    left: 1120px;
+    top: 668px;
+    width: 92px;
+}
