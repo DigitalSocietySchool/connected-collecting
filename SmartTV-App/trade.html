@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <meta http-equiv="content-type" content="application/ce-html+xml; charset=UTF-8"/>
+        <title></title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width"/>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        
+        <link rel="stylesheet" href="css/main.css"/> 
+        <link rel="stylesheet" href="css/appcss/trade.css"/>
+        
+        <script type="text/javascript" src="js/vendor/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script type="text/javascript" src="js/navigation/trade_navigation.js"></script>
+
+
+        <style type="text/css">
+
+            @font-face{
+                font-family: 'Helvetica Neue';
+                font-style: normal;
+                font-weight: 400;
+                src:url(css/appcss/helveticathin.ttf) format("truetype");
+            }
+
+            @font-face{
+                font-family: 'Helvetica Neue';
+                font-style: normal;
+                font-weight: 800;
+                src:url(css/appcss/helveticabold.ttf) format("truetype");
+            }
+
+            body{
+                width: 1280px;
+                height: 720px;
+                font-family: 'Helvetica Neue', sans-serif;
+                font-weight: 400;
+                /*overflow: hidden;*/
+            }
+
+        </style>
+
+    </head>
+    <body onload="ini_count_stickers();initialize_nav_array();get_users_to_trade();"> 
+
+        <img src="img/backgrounds/bg-ball.png" id="background" alt="background"/>
+        <img src="img/UI-elements/top-ui-home/logo-image.png" id="logo-image" alt="logo connected collecting"/>
+
+        <div class="container">
+            <!--MAIN TITLE-->
+            <div class="row" style="margin-top:40px;">
+                <div class="span2" id="name-container">
+                    <div class="border-ui-element border-ui-element-right">
+                        <p id="user-name">MLab 2</p>
+                        <p id="user-league">Jeugd divisie II</p>
+                    </div>
+                </div>
+
+                <div class="span4">
+                    <div class="left-main-title">
+                        <p class="main-title-text">CONNECTED</p>
+                    </div>
+                </div>
+
+                <div class="span4">
+                    <div class="right-main-title">
+                        <p class="main-title-text">COLLECTING</p>
+                    </div>
+                </div>
+
+                <div class="span2" id="progress-container">
+                    <div class="border-ui-element border-ui-element-left">
+                        <img src="img/UI-elements/top-ui-home/progress-stickers.png" id="image-stickers-progress" alt="sticker counter image"/>
+                    </div>
+                    <div class="border-ui-element border-ui-element-left-hover" id="overlay-progress">
+                        <p id="progress-cuantity"><span id="sticker-count"></span>/352</p>
+                    </div>
+ 
+                </div>
+            </div>
+            <!-- END MAIN TITLE-->
+
+            <div class="row">
+
+                <div id="first-loading" class="span12">
+                    <img src="./img/UI-elements/loading-ui/preloader_transparent.gif"/>
+                </div>
+
+                <div id="no-users">
+                    <div class="span12">
+                        <p>Er zijn geen gebruikers die <span id="sticker-name-2"></span> kunnen ruilen.</p>
+                        <div class="button-go-back">
+                            Ga terug naar album
+                        </div>
+                    </div>
+                </div>
+
+                <div id="content-after-load">
+
+                    <div class="span3" style="overflow:hidden;max-height: 490px;">
+                        <ul id="option-list">
+                            <li><div id="black_element"></div></li>
+                            <!--<li id="element-1" class="option-glow">Ruben</li>
+                            <li id="element-2">Monica</li>
+                            <li id="element-3">Steven</li>-->
+                        </ul>
+                        <div id="element-selected"></div>
+                        <div class="arrow-up"></div>
+                        <div class="arrow-down"></div>
+                    </div>
+
+                    <div class="span9">
+
+                        <div id="loading">
+                            <img src="./img/UI-elements/loading-ui/preloader_transparent.gif"/>
+                        </div>
+
+                        <div id="sticker-to-give-container">
+                            <div id="sticker-to-give-title">
+                                <div id="title-container-style">
+                                    Stickers die <span id="name-user" style="font-weight:800;">Ruben</span> nodig heeft
+                                </div>
+                            </div>
+
+                            <ul id="stickers-trade-requests" class="stickers-list-trade">
+                                <li style="margin-left:0px;"><img src="img/stickers/players/arjenRobben.png" id="trade-req-img-1" class="sticker-img-trade"/></li>
+                                <li><img src="img/stickers/players/arjenRobben.png" id="trade-req-img-2" class="sticker-img-trade"/></li>
+                                <li><img src="img/stickers/players/arjenRobben.png" id="trade-req-img-3" class="sticker-img-trade"/></li>
+                                <li><img src="img/stickers/players/arjenRobben.png" id="trade-req-img-4" class="sticker-img-trade"/></li>
+                                <li><img src="img/stickers/players/arjenRobben.png" id="trade-req-img-5" class="sticker-img-trade"/></li>
+                            </ul>
+
+                            <div id="confirmation-text">
+                                Selecteer de sticker die je wilt ruilen voor <span id="sticker-name">[CHOSEN STICKER]</span>
+                            </div>
+                        </div>
+
+                        <div id="no-stickers">
+                            Deze gebruiker kan geen stickers met jou ruilen.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div> 
+
+        <img src="img/UI-elements/back-ui.png" id="back-arrow"/>
+
+        <!--Popups section-->
+
+        <div class="modal hide fade" id="request-success">
+            <div class="modal-header">
+                <h3>Verzoek verzonden</h3>
+            </div>
+            <div class="modal-body">
+                <p><a href="#" class="button-glow">Ga terug naar overzicht</a></p>
+            </div>
+        </div>
+
+        <div class="modal hide fade" id="request-error">
+            <div class="modal-header">
+                <h3>Er is iets mis gegaan</h3>
+            </div>
+            <div class="modal-body">
+                <p><a href="#" class="button-glow">Herladen niet gelukt</a></p>
+            </div>
+        </div>
+
+    </body>
+</html>

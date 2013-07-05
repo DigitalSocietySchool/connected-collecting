@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <meta http-equiv="content-type" content="application/ce-html+xml; charset=UTF-8"/>
+        <title></title>
+        
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width"/>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        
+        <link rel="stylesheet" href="css/main.css"/>
+        <link rel="stylesheet" href="css/appcss/videos.css"/>
+
+        
+        <script type="text/javascript" src="js/vendor/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script type="text/javascript" src="js/navigation/video_navigation.js"></script>
+        <script type="text/javascript" src="js/mediaobject_functions.js"></script>
+
+        <style type="text/css">
+
+            @font-face{
+                font-family: 'Helvetica Neue';
+                font-style: normal;
+                font-weight: 400;
+                src:url(css/appcss/helveticathin.ttf) format("truetype");
+            }
+
+            @font-face{
+                font-family: 'Helvetica Neue';
+                font-style: normal;
+                font-weight: 800;
+                src:url(css/appcss/helveticabold.ttf) format("truetype");
+            }
+
+            body{
+                width: 1280px;
+                height: 720px;
+                font-family: 'Helvetica Neue', sans-serif;
+                font-weight: 400;
+                color:white;
+                /*overflow: hidden;*/
+            }
+
+        </style>
+
+    </head>
+    <body onload="ini_count_stickers();initialize_nav_array();load_videos();">
+
+        <img src="img/backgrounds/bg-ball.png" id="background" alt="background"/>
+        <img src="img/UI-elements/top-ui-home/logo-image.png" id="logo-image" alt="logo connected collecting"/>
+
+        <div class="container">
+            <!--MAIN TITLE-->
+            <div class="row" style="margin-top:40px;">
+                <div class="span2" id="name-container">
+                    <div class="border-ui-element border-ui-element-right">
+                        <p id="user-name">MLab 2</p>
+                        <p id="user-league">Jeugd divisie II</p>
+                    </div>
+                </div>
+
+                <div class="span4">
+                    <div class="left-main-title">
+                        <p class="main-title-text">CONNECTED</p>
+                    </div>
+                </div>
+
+                <div class="span4">
+                    <div class="right-main-title">
+                        <p class="main-title-text">COLLECTING</p>
+                    </div>
+                </div>
+
+                <div class="span2" id="progress-container">
+                    <div class="border-ui-element border-ui-element-left">
+                        <img src="img/UI-elements/top-ui-home/progress-stickers.png" id="image-stickers-progress" alt="sticker counter image"/>
+                    </div>
+                    <div class="border-ui-element border-ui-element-left-hover" id="overlay-progress">
+                        <p id="progress-cuantity"><span id="sticker-count"></span>/352</p>
+                    </div>
+ 
+                </div>
+            </div>
+            <!-- END MAIN TITLE-->
+
+            <div class="row">
+                <div class="span12" style="margin-top:-6px;">
+                    <ul class="videos-overview-list white-overlay">
+                        <li class="video-glow">
+                            <img src="img/video-miniatures/animation-miniature-small.png" id="video-1"/>
+                            <div class="video-title">
+                                ANIMATIE
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/video-miniatures/block.png" id="video-2"/>
+                            <div class="video-title">
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/video-miniatures/block.png" id="video-3"/>
+                            <div class="video-title">
+                    
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/video-miniatures/block.png" id="video-4"/>
+                            <div class="video-title">
+                          
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12" style="margin-top:16px;">
+                    <ul class="videos-overview-list white-overlay">
+                        <li>
+                            <img src="img/video-miniatures/block.png" id="video-5"/>
+                            <div class="video-title">
+                        
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/video-miniatures/block.png" id="video-6"/>
+                            <div class="video-title">
+                          
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/video-miniatures/block.png" id="video-7"/>
+                            <div class="video-title">
+                          
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/video-miniatures/block.png" id="video-8"/>
+                            <div class="video-title">
+                          
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="span12" style="margin-top:16px;">
+                    <ul class="videos-overview-list white-overlay">
+                        <li>
+                            <img src="img/video-miniatures/block.png" id="video-9"/>
+                            <div class="video-title">
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/video-miniatures/block.png" id="video-10"/>
+                            <div class="video-title">
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/video-miniatures/block.png" id="video-11"/>
+                            <div class="video-title">
+                              
+                            </div>
+                        </li>
+                        <li>
+                            <img src="img/video-miniatures/block.png" id="video-12"/>
+                            <div class="video-title">
+                               
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="span12">
+                    <ul id="down-menu">
+                        <li>
+                            <div class="left-button invi" id="pre-button">
+                                VORIGE
+                            </div>  
+                        </li>
+                        <li>
+                            <div class="circle circle-glow" id="circle1">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="circle" style="margin-left:10px;margin-right:10px;" id="circle2">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="circle" id="circle3">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="right-button" id="next-button">
+                                VOLGENDE
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div> 
+
+        <img src="img/UI-elements/back-ui.png" id="back-arrow"/>
+
+        <!--If need a mediaobject to play video, uncomment the next sections and add the correspondent JS code-->
+        <div id="mediaobject">
+            <object id="video" type="video/mpeg4" width="1280" height="720"></object>
+        </div>
+
+        <div id="loadingImage">
+            <img src="./img/UI-elements/loading-ui/preloader_transparent.gif" style="margin-top:310px;" alt="loading"/>
+        </div>
+
+        <div class="modal hide fade" id="resume-video" style="text-align:center;font-size:24px;">
+            <div class="modal-header">
+                <h3>Video gepauseerd</h3>
+            </div>
+            <div class="modal-body">
+                <p><a href="#" class="button-glow">Blijf kijken</a></p>
+                <p><a href="#" class="">Ga terug</a></p>
+            </div>
+        </div>
+        
+    </body>
+</html>

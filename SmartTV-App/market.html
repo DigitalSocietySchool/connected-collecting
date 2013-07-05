@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <meta http-equiv="content-type" content="application/ce-html+xml; charset=UTF-8"/>
+        <title></title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width"/>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        
+        <link rel="stylesheet" href="css/main.css"/>
+
+        <link rel="stylesheet" href="css/appcss/market.css"/>
+
+        
+        <script type="text/javascript" src="js/vendor/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script type="text/javascript" src="js/navigation/market_navigation.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Dosis:200,300' rel='stylesheet' type='text/css'/>
+
+        <style type="text/css">
+            @font-face{
+                font-family: 'Helvetica Neue';
+                font-style: normal;
+                font-weight: 400;
+                src:url(css/appcss/helveticathin.ttf) format("truetype");
+            }
+
+            @font-face{
+                font-family: 'Helvetica Neue';
+                font-style: normal;
+                font-weight: 800;
+                src:url(css/appcss/helveticabold.ttf) format("truetype");
+            }
+
+            body{
+                width: 1280px;
+                height: 720px;
+                font-family: 'Helvetica Neue', sans-serif;
+                font-weight: 400;
+                overflow: hidden;
+            }       
+        </style>
+
+    </head>
+    <body onload="ini_count_stickers();initialize_nav_array();get_last_trades();get_trades_requests();get_user_requests();">
+
+        <img src="img/backgrounds/bg-ball.png" id="background" alt="background"/>
+        <img src="img/UI-elements/top-ui-home/logo-image.png" id="logo-image" alt="logo connected collecting"/>
+
+        <div class="container">
+            <!--MAIN TITLE-->
+            <div class="row" style="margin-top:40px;">
+                <div class="span2" id="name-container">
+                    <div class="border-ui-element border-ui-element-right">
+                        <p id="user-name">MLab 2</p>
+                        <p id="user-league">Jeugd divisie II</p>
+                    </div>
+                </div>
+
+                <div class="span4">
+                    <div class="left-main-title">
+                        <p class="main-title-text">CONNECTED</p>
+                    </div>
+                </div>
+
+                <div class="span4">
+                    <div class="right-main-title">
+                        <p class="main-title-text">COLLECTING</p>
+                    </div>
+                </div>
+
+                <div class="span2" id="progress-container">
+                    <div class="border-ui-element border-ui-element-left">
+                        <img src="img/UI-elements/top-ui-home/progress-stickers.png" id="image-stickers-progress" alt="sticker counter image"/>
+                    </div>
+                    <div class="border-ui-element border-ui-element-left-hover" id="overlay-progress">
+                        <p id="progress-cuantity"><span id="sticker-count"></span>/352</p>
+                    </div>
+ 
+                </div>
+            </div>
+            <!-- END MAIN TITLE-->
+
+            <div class="row">
+
+                <div class="span3">
+                    <ul style="margin-top:-267px;" id="option-list">
+                        <li><div id="black_element"></div></li>
+                        <li id="element-1" class="option-glow">Overzicht</li>
+                        <li id="element-2"><span id="offered-option">Aangeboden</span><span id="request-number"></span></li>
+                        <li id="element-3"><span id="request-option">Verzoeken</span><span id="offered-number"></span></li>
+                    </ul>
+                    <div id="element-selected"></div>
+                    <div class="arrow-up"></div>
+                    <div class="arrow-down"></div>
+                </div>
+
+                <div class="span9">
+                    
+                    <div id="loading">
+                        <img src="img/UI-elements/loading-ui/preloader_transparent.gif" />
+                    </div>
+
+                    <div id="people-requests-container">
+                        <div id="request-form-people">
+                            <div class="row">
+                                <div class="span3">
+                                    <div id="sticker-to-change-section">
+                                        <div id="background-sticker-trade-1"></div>
+                                        <div class="up-sticker" id="up-sticker-left">
+                                            Jij krijgt:
+                                        </div>
+                                        <img src="img/stickers/players/arjenRobben.png" id="sticker-to-change"/>
+                                    </div>
+                                </div>
+                                <div class="span3">
+                                    <img src="img/UI-elements/market-ui/trading-arrows.png" id="trading-arrows"/>
+                                </div>
+                                <div class="span3">
+                                    <div id="sticker-to-get-section">
+                                        <div id="background-sticker-trade-2"></div>
+                                        <div class="up-sticker" id="up-sticker-right">
+                                            <span id="name-user-trade">[un]</span> krijgt:
+                                        </div>
+                                        <img src="img/stickers/players/clintDempsey.png" id="sticker-to-get"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="margin-top: 35px;">
+                                <div class="span4" style="text-align:right;">
+                                    <div id="decline-button" class="button-users-requests">
+                                        AFWIJZEN
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div id="accept-button" class="button-users-requests">
+                                        ACCEPTEREN
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="no-request-from-people" style="display:none;">
+                            Je hebt geen verzoeken.
+                        </div>
+                    </div>
+
+                    
+
+                    <div id="market-overview" style="display:none;">
+                        <div class="row">
+                            <div class="span3">
+                                <div class="title-overview-bar left-title-bar"></div>
+                            </div>
+                            <div class="span1 offset1">
+                                <span class="title-name">NIEUWS</span>
+                            </div>
+                            <div class="span3 offset1">
+                                <div class="title-overview-bar right-title-bar"></div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="span9">
+                                <div id="news" style="height:163px;">
+                                    <div id="content-news">
+                                        Je hebt <span id="number-stickers-news"></span> van de 352 stickers.<br/>
+                                        Je kan beginnen ruilen door op een sticker die je nog niet hebt te drukken in je album.<br/>
+                                        Collect. Trade. Discover.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="span3">
+                                <div class="title-overview-bar left-title-bar"></div>
+                            </div>
+                            <div class="span1 offset1">
+                                 <span class="title-name">RECENT GERUILD</span>
+                            </div>
+                            <div class="span3 offset1">
+                                <div class="title-overview-bar right-title-bar"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                             <div class="span9">
+                            
+                                <ul id="stickers-overview-requests" class="stickers-list-overview">
+                                    <li><img src="img/stickers/players/arjenRobben.png" id="overview-req-img-1" class="sticker-img-overview"/></li>
+                                    <li><img src="img/stickers/players/arjenRobben.png" id="overview-req-img-2" class="sticker-img-overview"/></li>
+                                    <li><img src="img/stickers/players/arjenRobben.png" id="overview-req-img-3" class="sticker-img-overview"/></li>
+                                    <li><img src="img/stickers/players/arjenRobben.png" id="overview-req-img-4" class="sticker-img-overview"/></li>
+                                    <li><img src="img/stickers/players/arjenRobben.png" id="overview-req-img-5" class="sticker-img-overview"/></li>
+                                </ul>
+
+                                <div id="no-last-trades">
+                                    Je hebt nog geen stickers geruild
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="your-requests-container">
+                        <div id="no-user-made-requests">
+                            Je hebt nog geen verzoeken verzonden.
+                        </div>
+
+                        <div id="user-made-request" style="display:none;">
+                            <ul id="stickers-row-1">
+                                <li class="list-sticker" id="list-sticker-1">
+                                    <img src="img/stickers/stickers/blankStickerNoName_orange.png" width="135" id="sticker-img-1"/>
+                                    <div class="stickers-names" id="sticker-name-1"></div>
+                                    <div id="timer1" class="timer">
+                                        <img src="img/UI-elements/market-ui/timer.png" width="25"/>
+                                        <span></span> uren
+                                    </div>
+                                </li>
+                                <li class="list-sticker">
+                                    <img src="img/stickers/stickers/blankStickerNoName_orange.png" width="135" id="sticker-img-2"/>
+                                    <div class="stickers-names" id="sticker-name-2"></div>
+                                    <div id="timer2" class="timer">
+                                        <img src="img/UI-elements/market-ui/timer.png" width="25"/>
+                                        <span></span> uren
+                                    </div>
+                                </li>
+                                <li class="list-sticker">
+                                    <img src="img/stickers/stickers/blankStickerNoName_orange.png" width="135" id="sticker-img-3"/>
+                                    <div class="stickers-names" id="sticker-name-3"></div>
+                                    <div id="timer3" class="timer">
+                                        <img src="img/UI-elements/market-ui/timer.png" width="25"/>
+                                        <span></span> uren
+                                    </div>
+                                </li>
+                                <li class="list-sticker">
+                                    <img src="img/stickers/stickers/blankStickerNoName_orange.png" width="135" id="sticker-img-4"/>
+                                    <div class="stickers-names" id="sticker-name-4"></div>
+                                    <div id="timer4" class="timer">
+                                        <img src="img/UI-elements/market-ui/timer.png" width="25"/>
+                                        <span></span> uren
+                                    </div>
+                                </li>
+                                <li class="list-sticker">
+                                    <img src="img/stickers/stickers/blankStickerNoName_orange.png" width="135" id="sticker-img-5"/>
+                                    <div class="stickers-names" id="sticker-name-5"></div>
+                                    <div id="timer5" class="timer">
+                                        <img src="img/UI-elements/market-ui/timer.png" width="25"/>
+                                        <span></span> uren
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div> 
+
+        <img src="img/UI-elements/back-ui.png" id="back-arrow"/>
+
+        <!--Popups section-->
+
+        <div class="modal hide fade market-modal" id="request-accepted">
+            <div class="modal-header">
+                <h3>Verzoek geaccepteerd</h3>
+            </div>
+            <div class="modal-body">
+                <p><a href="#" class="button-glow">Volgend verzoek</a></p>
+                <p><a href="#" class="" style="">Ga naar je nieuwe stickers</a></p>
+            </div>
+        </div>
+
+        <div class="modal hide fade market-modal" id="request-error">
+            <div class="modal-header">
+                <h3>Foutmelding</h3>
+            </div>
+            <div class="modal-body">
+                <p><a href="#" class="button-glow" style="border-color:#E74C3C">Herladen niet gelukt</a></p>
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <meta http-equiv="content-type" content="application/ce-html+xml; charset=UTF-8"/>
+        <title></title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width"/>
+
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        
+        <link rel="stylesheet" href="css/main.css"/> 
+        <link rel="stylesheet" href="css/appcss/album.css"/>
+
+        
+        <script type="text/javascript" src="js/vendor/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script type="text/javascript" src="js/navigation/album_navigation.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Dosis:200,300' rel='stylesheet' type='text/css'/>
+        
+        <style type="text/css">
+
+            @font-face{
+                font-family: 'Helvetica Neue';
+                font-style: normal;
+                font-weight: 400;
+                src:url(css/appcss/helveticathin.ttf) format("truetype");
+            }
+
+            body{
+                width: 1280px;
+                height: 720px;
+                font-family: 'Helvetica Neue', sans-serif;
+                font-weight: 400;
+                overflow: hidden;
+            }       
+
+        </style>
+
+    </head>
+    <body onload="ini_count_stickers();initialize_nav_array();getTeamsData();initializeAudio();">
+
+        <img src="img/backgrounds/bg-ball.png" id="background" alt="background"/>
+        <img src="img/UI-elements/top-ui-home/logo-image.png" id="logo-image" alt="logo connected collecting"/>
+
+        <div id="mediaobjectaudio">
+            <object id="audio" type="audio/mp3" width="0" height="0"></object>
+        </div>
+
+        <div class="container">
+            <!--MAIN TITLE-->
+            <div class="row" style="margin-top:40px;">
+                <div class="span2" id="name-container">
+                    <div class="border-ui-element border-ui-element-right">
+                        <p id="user-name">MLab 2</p>
+                        <p id="user-league">Jeugd divisie II</p>
+                    </div>
+                </div>
+
+                <div class="span4">
+                    <div class="left-main-title">
+                        <p class="main-title-text">CONNECTED</p>
+                    </div>
+                </div>
+
+                <div class="span4">
+                    <div class="right-main-title">
+                        <p class="main-title-text">COLLECTING</p>
+                    </div>
+                </div>
+
+                <div class="span2" id="progress-container">
+                    <div class="border-ui-element border-ui-element-left">
+                        <img src="img/UI-elements/top-ui-home/progress-stickers.png" id="image-stickers-progress" alt="sticker counter image"/>
+                    </div>
+                    <div class="border-ui-element border-ui-element-left-hover" id="overlay-progress">
+                        <p id="progress-cuantity"><span id="sticker-count"></span>/352</p>
+                    </div>
+ 
+                </div>
+            </div>
+            <!-- END MAIN TITLE-->
+
+            <div class="row" style="text-align:center;">
+
+                <div id="stickers-view">
+
+                    <div class="span3" style="overflow: hidden;height: 570px;">
+                        <ul id="flag-list">
+                            <li><div id="black_element" ></div></li>
+                            <li id="element-1" data-country="6">Amerika</li>
+                            <li id="element-2" data-country="4">Brazilië</li>
+                            <li id="element-3" class="flag-glow" data-country="1">Nederland</li>
+                            <li id="element-4" data-country="3">België</li>
+                            <li id="element-5" data-country="5">Spanje</li>
+                        </ul>
+                        <div id="element-selected" ></div>
+                        <div class="arrow-up"></div>
+                        <div class="arrow-down"></div>
+                    </div>
+
+
+                    <div class="span9">
+
+                        <div id="loading">
+                            <img src="img/UI-elements/loading-ui/preloader_transparent.gif" alt="Preloading"/>
+                        </div>
+                       
+                        <div id="complete-view">
+                            <div class="row" style="margin-top:28px;">
+                                <ul id="stickers-row-1">
+                                    <li class="list-sticker" id="list-sticker-1">
+                                        <img src="img/stickers/players/wesleySneijder.png" id="sticker-img-1"/>
+                                        <div class="stickers-names" id="sticker-name-1"></div>
+                                    </li>
+                                    <li class="list-sticker">
+                                        <img src="img/stickers/players/maartenStekelenburg.png" id="sticker-img-2"/>
+                                        <div class="stickers-names" id="sticker-name-2"></div>
+                                    </li>
+                                    <li class="list-sticker">
+                                        <img src="img/stickers/players/arjenRobben.png" id="sticker-img-3"/>
+                                        <div class="stickers-names" id="sticker-name-3"></div>
+                                    </li>
+                                    <li class="list-sticker">
+                                        <img src="img/stickers/players/rafaelVanDerVaart.png" id="sticker-img-4"/>
+                                        <div class="stickers-names" id="sticker-name-4"></div>
+                                    </li>
+                                    <li class="list-sticker">
+                                        <img src="img/stickers/players/robinVanPersie.png" id="sticker-img-5"/>
+                                        <div class="stickers-names" id="sticker-name-5"></div>
+                                    </li>
+                                    <li class="list-sticker">
+                                        <img src="img/stickers/players/dirkKuyt.png" id="sticker-img-6"/>
+                                        <div class="stickers-names" id="sticker-name-6"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                
+                            <div class="row" style="margin-top:6px;">
+                                <ul id="stickers-row-2" class="stickers-row">
+                                    <li class="list-sticker" id="list-sticker-2">
+                                        <img src="img/stickers/players/jonathanDeGuzman.png" id="sticker-img-7"/>
+                                        <div class="stickers-names" id="sticker-name-7"></div>
+                                    </li>
+                                    <li class="list-sticker">
+                                        <img src="img/stickers/players/ibrahimAffelay.png" id="sticker-img-8"/>
+                                        <div class="stickers-names" id="sticker-name-8"></div>
+                                    </li>
+                                    <li class="list-sticker">
+                                        <img src="img/stickers/players/johnHeitinga.png" id="sticker-img-9"/>
+                                        <div class="stickers-names" id="sticker-name-9"></div>
+                                    </li>
+                                    <li class="list-sticker">
+                                        <img src="img/stickers/players/erikPieters.png" id="sticker-img-10"/>
+                                        <div class="stickers-names" id="sticker-name-10"></div>
+                                    </li>
+                                    <li class="list-sticker">
+                                        <img src="img/stickers/players/michelVorm.png" id="sticker-img-11"/>
+                                        <div class="stickers-names" id="sticker-name-11"></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="info-view" class="span12">
+                    <div class="row">
+                        <div class="span3">
+                            <img src="img/stickers/players/michelVorm.png" id="player-img-big"/>
+                        </div>
+                        <div class="span3" style="position:relative;">
+                            <div id="team-logo-container">
+                                <span id="club-title">
+                                    HUIDIGE CLUB
+                                </span>
+                                <img src="img/design/player-info/teams-logos/galatasaray.png" id="logo-club" />
+                                <span id="club-name">
+                                    GALATASARAY
+                                </span>
+                            </div>
+                        </div>
+                        <div class="span5">
+                            <div id="player-info-container">
+                                <span id="info-title">
+                                    INFORMATIE
+                                </span>
+                                <div id="info-text">
+                                    Naam: Wesley Sneijder<br/>
+                                    Leeftijd:       28, geboren op 9 Juni <br/>
+                                    Positie:        Middenvelder<br/>
+                                    Huidige club: Galatasaray<br/>
+                                </div>
+                                <img src="img/UI-elements/album-ui/field.png" id="field-image"/>
+                                <div id="marker"></div>
+                                <div id="position-text">
+                                    MIDDENVELD
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span2 offset3">
+                            <span id="button-previous-player">
+                                VORIGE SPELER
+                            </span>
+                        </div>
+                        <div class="span2">
+                            <span id="button-overview">
+                                OVERZICHT
+                            </span>
+                        </div>
+                        <div class="span2">
+                            <span id="button-next-player">
+                                VOLGENDE SPELER
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="img/UI-elements/back-ui.png" id="back-arrow"/>
+
+    </body>
+</html>
